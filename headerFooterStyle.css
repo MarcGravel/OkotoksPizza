@@ -1,0 +1,48 @@
+.header-container h1{
+    display: inline;
+    color: darkred;
+}
+.header-container h2{
+    text-align: right;
+    float: right;
+    color: darkred;
+}
+
+.header-container img{
+    vertical-align: -8px;
+}
+
+.main-header {
+    background-color: bisque;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: lightslategray;
+}
+
+.nav-button {
+    cursor: pointer;
+    font-weight: 600;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 12px;
+    background-color: #c4dfff;
+
+}
+
+.nav-button:hover {
+    cursor: pointer;
+    background-color: #7eb8ff;
+}
+
+.main-footer {
+    background-color: bisque;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: lightslategray;
+}
+
+#logo-lower img{
+    vertical-align: -10px;
+}
