@@ -1,0 +1,129 @@
+html {
+    background-color: #393838;
+}
+
+main {
+    position: relative;
+    background-color: #393838;
+    top: 60px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    width: 80vw;
+}
+
+.main-header {
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    background-color: #f7d6ad;
+    border-top-style: none;
+    border-bottom-style: solid;
+    border-color: darkslategray;
+    border-width: 2px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    width: 80vw;   
+}
+
+.main-header img {
+    height: 40px;
+}
+
+.header-container h1{
+    display: inline;
+    color: darkred;
+}
+.header-container h2{
+    float: right;
+    margin: inherit;
+    padding-right: 10px;
+    color: darkred;
+}
+
+.header-container img{
+    vertical-align: -8px;
+}
+
+.header-container + nav:hover{
+    background-color: #e2b988
+}
+
+nav {
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.nav-button {
+    cursor: pointer;
+    font-weight: 600;
+    padding-right: 115px;
+    padding-left: 115px;
+    border-radius: 4px;
+    border: none;
+    background-color: #f7d6ad;
+    font-size: large;
+}
+
+.nav-button:hover {
+    cursor: pointer;
+    background-color: #e2b988;
+}
+
+.nav-button:active {
+    cursor: pointer;
+    background-color: darkred;
+    color: #faf9f9;
+}
+
+h1,h2,h4,p,li {
+    color: #faf9f9;
+}
+
+.copyright > p {
+    color: #000000;
+}
+
+a:link {
+    color: rgb(158, 156, 161);
+}
+
+a:visited {
+    color: rgb(124, 77, 233);
+}
+
+section > img {
+    width: 560px;
+}
+
+.main-footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: sticky;
+    bottom: 0;
+    z-index: -1;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    width: 80vw;
+    background-color: #f7d6ad;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: lightslategray;
+}
+
+#logo-lower img{
+    vertical-align: -10px;
+    height: 30px;
+}
+
+#footer-nav > a {
+    margin-left: 20px;
+}
+
+#contact-photo {
+    width: 200px;
+}
