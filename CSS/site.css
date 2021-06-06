@@ -5,7 +5,7 @@ html {
 main {
     position: relative;
     background-color: #393838;
-    top: 60px;
+    top: 7vw;
     margin-left: 10vw;
     margin-right: 10vw;
     width: 80vw;
@@ -24,11 +24,15 @@ main {
     border-bottom-right-radius: 10px;
     margin-left: 10vw;
     margin-right: 10vw;
-    width: 80vw;   
+    width: 80vw; 
 }
 
 .main-header img {
     height: 40px;
+}
+
+.header-container {
+    width: 80vw; 
 }
 
 .header-container h1{
@@ -36,9 +40,9 @@ main {
     color: darkred;
 }
 .header-container h2{
-    float: right;
-    margin: inherit;
-    padding-right: 10px;
+    display: inline-block;
+    position: relative;
+    left: 60%;
     color: darkred;
 }
 
@@ -82,10 +86,6 @@ h1,h2,h4,p,li {
     color: #faf9f9;
 }
 
-.copyright > p {
-    color: #000000;
-}
-
 a:link {
     color: rgb(158, 156, 161);
 }
@@ -99,14 +99,17 @@ section > img {
 }
 
 .main-footer {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    position: sticky;
-    bottom: 0;
-    z-index: -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding-top: 20vh;
+    padding-bottom: 1vh;
     margin-left: 10vw;
     margin-right: 10vw;
     width: 80vw;
+    height: 20vh;
     background-color: #f7d6ad;
     border-top-style: solid;
     border-bottom-style: solid;
@@ -116,14 +119,37 @@ section > img {
 }
 
 #logo-lower img{
-    vertical-align: -10px;
-    height: 30px;
+    height: 5vw;
 }
 
-#footer-nav > a {
-    margin-left: 20px;
+#logo-lower {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#jobs {
+    align-self: end;
+}
+
+#about {
+    align-self: end;
+}
+
+#cookies {
+    align-self: end;
+}
+
+.copyright {
+    grid-row: 3;
+    grid-column: 3;
+}
+
+.copyright > p {
+    position: relative;
+    font-size: 1.2em;
+    color: #000000;
 }
 
 #contact-photo {
-    width: 200px;
+    width: 20vw;
 }
