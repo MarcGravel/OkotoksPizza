@@ -27,8 +27,22 @@ main {
     width: 80vw; 
 }
 
+@keyframes shakeLogo {
+    0% {transform: translate(1px, 1px) rotate(0deg);}
+    20% {transform: translate(-1px, -2px) rotate(1deg);}
+    40% {transform: translate(-2px, -1px) rotate(-1deg);}
+    60% {transform: translate(2px, 1px) rotate(2deg);}
+    80% {transform: translate(-2px, -2px) rotate(0deg);}
+    100% {transform: translate(1px, 2px) rotate(-1deg);}
+}
+
 .main-header img {
-    height: 40px;
+    margin-left: 1vw;
+    height: 45px;
+}
+
+.main-header img:hover {
+    animation: shakeLogo 0.5s;
 }
 
 .header-container {
@@ -37,21 +51,30 @@ main {
 
 .header-container h1{
     display: inline;
+    margin-left: 1.5vw;
+    font-size: 3rem;
     color: darkred;
+    transition: color 0.5s ease-out;
 }
+
+.header-container h1:hover {
+    color: red;
+}
+
 .header-container h2{
     display: inline-block;
     position: relative;
-    left: 60%;
+    left: 50%;
     color: darkred;
+    transition: color 0.5s ease-out;
+}
+
+.header-container h2:hover {
+    color: red;
 }
 
 .header-container img{
     vertical-align: -8px;
-}
-
-.header-container + nav:hover{
-    background-color: #e2b988
 }
 
 nav {
@@ -63,17 +86,18 @@ nav {
 .nav-button {
     cursor: pointer;
     font-weight: 600;
-    padding-right: 115px;
-    padding-left: 115px;
+    padding-right: 10vw;
+    padding-left: 10vw;
     border-radius: 4px;
     border: none;
     background-color: #f7d6ad;
     font-size: large;
+    transition: background-color 0.5s ease-in-out;
 }
 
 .nav-button:hover {
     cursor: pointer;
-    background-color: #e2b988;
+    background-color: #e2b988
 }
 
 .nav-button:active {
@@ -118,8 +142,13 @@ section > img {
     border-color: lightslategray;
 }
 
-#logo-lower img{
+#logo-lower img {
     height: 5vw;
+}
+
+#logo-lower img:hover {
+    animation: shakeLogo 0.5s;
+    animation-iteration-count: infinite;
 }
 
 #logo-lower {
