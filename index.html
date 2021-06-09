@@ -21,17 +21,18 @@
         <link rel="stylesheet" type="text/css" href="CSS/site.css">
     </head>
     <body>
-        <header class="main-header">
-            <div class="header-container">
-                <a id="img-logo" href="index.html"><img src="Media/Okotoks Pizza.png" alt="Okotoks Pizza Logo"></a>
-                <h1>Okotoks Pizza</h1>
-                <h2>(777) 777-7777</h2>
-            </div>
+        <header id="main-header">
+            <a id="img-logo" href="index.html"><img id="site-logo" src="Media/Okotoks Pizza.png" alt="Okotoks Pizza Logo"></a>
+            <h1>Okotoks Pizza</h1>
+            <h2>(777) 777-7777</h2>
             <nav id="header-nav">
-                <button class="nav-button" onclick="location.href='index.html'">Home</button>
-                <button class="nav-button" onclick="location.href='reviews.html'">Reviews</button>
-                <button class="nav-button" onclick="location.href='contact.html'">Contact</button>
+                <button class="nav-button" id="home-btn" onclick="location.href='index.html'">Home</button>
+                <button class="nav-button" id="reviews-btn" onclick="location.href='reviews.html'">Reviews</button>
+                <button class="nav-button" id="contact-btn" onclick="location.href='contact.html'">Contact</button>
             </nav>
+        </header>
+        <header id="mobile-phone-nbr">
+            <h1>(777) 777-7777</h1>
         </header>
         <main>
             <article id="aboutPizza">
@@ -41,16 +42,12 @@
                         <a href="https://images.unsplash.com/photo-1574126154517-d1e0d89ef734?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80">pizza</a>
                         . Not suprisingly, we also serve <a href="https://images.unsplash.com/photo-1612528443702-f6741f70a049?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1059&q=80">beverages</a>!
                     </p>
-                    <footer id="article-footer">
-                        <p>The best food around!</p>
-                    </footer>
+                    <p>The best food around!</p>
+                    <h4>Check out our food below!</h4>
                 </section>
             </article>
             <section id="imgAndMedia">
-                <header id="index-section-header">
-                    <h4>Check out our food below!</h4>
-                </header>
-                <iframe
+                <iframe id="video"
                 width="560" 
                 height="315" 
                 src="https://www.youtube.com/embed/xcbDX0QB4BM" 
@@ -59,17 +56,15 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 alt="Video about pizza">
                 </iframe>
-                <br>
                 <img id="main-img-one"
                 src="https://images.unsplash.com/photo-1489564239502-7a532064e1c2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" 
                 alt="Pizza Oven image"/>
-                <br>
                 <img id="main-img-two"
                 src="https://images.unsplash.com/photo-1581873372796-635b67ca2008?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
                 alt="Pizza photo"/>
             </section>
         </main>
-        <footer class="main-footer">
+        <footer id="main-footer">
             <span id="logo-lower">
                 <img src="Media/Okotoks Pizza.png" alt="Okotoks Pizza Logo" />
             </span>
