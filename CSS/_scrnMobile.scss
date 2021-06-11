@@ -1,0 +1,93 @@
+@media only screen and (max-width: 599px) {
+    
+    #main-header {
+        grid-template-columns: 0.5fr 2fr 3fr 3fr;
+        width: 100vw;
+        position:fixed;
+        left: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+
+        h1{
+            grid-column: 2 / 5;
+            font-size: 2rem;
+            justify-self: center;
+            position: relative;
+            right: 4.5vw;
+        }
+
+        h2{
+            font-size: xx-small;
+            visibility: hidden;
+        }
+    }
+
+    #mobile-phone-nbr {
+        visibility: visible;
+        position: fixed;
+        margin-top: 10vh;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        position: relative;
+        bottom: 1vh;
+        width: 100vw;
+
+        .nav-button {
+            width: 100%;
+            height: 4vh;
+            font-size: 0.9rem;
+            background-color: #e2b988;
+            border-style: solid;
+            border-color: #be9c72;
+            border-width: 1px;
+            justify-self: center;
+            border-radius: 0px;
+        }
+
+        #home-btn {
+            grid-column: 1 / 5;
+        }
+    
+        #reviews-btn {
+            grid-column: 5 / 9;
+        }
+    
+        #contact-btn {
+            grid-column: 9 / 13;
+        }
+    
+    }
+
+    main {
+        margin-left: 0px;
+        position: relative;
+        top: 15vh;
+
+        #aboutPizza {
+            margin-left: 4vw;
+            margin-right: 4vw;
+        }
+
+        #imgAndMedia {
+            
+            #video, img {
+                width: 90vw;
+            }
+        }
+    }
+
+    #main-footer {
+        width: 100vw;
+        margin-left: 0px;
+        border-radius: 0px;
+        position: relative;
+        top: 15vh;
+
+        .copyright > p {
+            font-size: 0.8em;
+        }
+    }
+}

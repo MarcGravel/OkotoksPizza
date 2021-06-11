@@ -1,0 +1,60 @@
+@import '_variables.scss';
+
+#main-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 1vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    width: 80vw;
+    height: 10vh;
+    background-color: $headFootColor;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: lightslategray;
+    border-bottom: none;
+
+    #jobs, #about, #cookies {
+        
+        a {
+            font-size: 1.5em;
+        }
+    }
+
+    #logo-lower {
+        justify-self: start;
+        margin-left: 2vw;
+        grid-column: 1;
+        grid-row: 2;
+
+        img {
+            height: 50px;
+            
+            &:hover {
+                animation: shakeLogo 0.5s;
+                animation-iteration-count: infinite;
+            }
+        }
+    }
+
+    .copyright {
+        grid-row: 2;
+        grid-column: 3;
+        justify-self: end;
+        margin-right: 2vw;
+
+        p {
+            font-size: 1.2em;
+            @include fontAnimation (black);
+
+            p:hover {
+                color: red;
+            }
+        }
+    }
+}

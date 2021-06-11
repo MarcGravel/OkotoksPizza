@@ -1,0 +1,39 @@
+@media only screen and (min-width: 600px) {
+    
+    #main-header {
+        grid-template-columns: 0.5fr 2fr 3fr 3fr;
+        width: 100vw;
+        left: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+
+        h1 {
+            justify-self: start;
+            margin-left: 2vw;
+        }
+
+        h2 {
+            justify-self: center;
+            font-size: 1.5em;
+        }
+    }
+
+    nav {
+        width: 100%;
+
+        .nav-button {
+            width: 32vw;
+        }
+    }
+
+    main {
+        margin-top: 10vh;
+        margin-left: 0px;
+    }
+
+    #main-footer {
+        width: 100vw;
+        margin-left: 0px;
+        border-radius: 0px;
+    }
+}

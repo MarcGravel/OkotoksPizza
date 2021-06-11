@@ -1,0 +1,22 @@
+@import '_variables.scss';
+
+main {
+    margin-bottom: 2vh;
+    min-height: 76vh;
+    display: grid;
+    justify-items: center;
+    z-index: -1;
+
+    #aboutPizza { 
+        margin-left: 4vw;
+    }
+
+    #imgAndMedia {
+        
+        #video, img {
+            display: block;
+            width: $contentMediaWidth;
+            margin-top: 2vh;
+        }
+    }
+}

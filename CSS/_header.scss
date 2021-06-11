@@ -1,0 +1,106 @@
+@import '_variables.scss';
+
+#main-header {
+    background-color: $headFootColor;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 4fr 2fr;
+    grid-template-rows: 2fr 1fr;
+    align-items: center;
+    justify-items: center;
+    height: 10vh;
+    width: 80vw;
+    position: fixed;
+    z-index: 3;
+    top: 0px;
+    left: 10vw;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    
+    #site-logo {
+        height: 40px;
+    }
+    
+    #site-logo:hover {
+        animation: shakeLogo 0.5s;
+    }
+
+    h1{
+        grid-column: 2 / 4;
+        font-size: 3rem;
+        justify-self: start;
+        @include fontAnimation($siteMainFontColor);
+
+        &:hover {
+            color: red;
+        }
+    }
+
+    h2{
+        grid-column: 4;
+        align-self: end;
+        position: relative;
+        left: 3vw;
+        @include fontAnimation($siteMainFontColor);
+        
+        &:hover {
+            color: red;
+        }
+    } 
+}
+
+nav {
+    grid-column: 1 / 5;
+    text-align: center;
+    width: 80vw;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    .nav-button {
+        cursor: pointer;
+        font-weight: 600;
+        width: 20vw;
+        border-radius: 4px;
+        border: none;
+        background-color: $headFootColor;
+        font-size: large;
+        transition: background-color 0.2s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:active {
+            cursor: pointer;
+            background-color: $siteMainFontColor;
+            color: #faf9f9;
+        }
+    }
+
+    #home-btn:hover, #contact-btn:hover {
+        @include navBtnHoverClr(#e2b988, 1.2em);
+    }
+
+    #reviews-btn:hover {
+        @include navBtnHoverClr(#c7a478, 1.4em);
+    }
+}
+
+#mobile-phone-nbr {
+    background-color: $headFootColor;
+    height: 3vh;
+    width: 100vw;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    visibility: hidden;
+
+    h1 {
+        font-size: 1.5rem;
+        @include fontAnimation($siteMainFontColor);
+
+        &:hover {
+            color: red;
+        }
+    }
+    
+}
